@@ -1,0 +1,26 @@
+```c
+/*I DONT KNOW WHAT THE FUCK AM I DOING IN MY LIFE*/
+
+#include <stdio.h>
+#include <math.h>
+#include <unistd.h>
+
+int main() {
+    
+    float goldenratio = 1.6180339887, F;
+    int exponent, R;
+    
+    printf("What Sequence is it?\n");
+    scanf("%d", & exponent);
+    
+    F = powf(goldenratio, exponent) / sqrt(5.0);
+    R = round(F);
+    
+    sleep(3);
+    
+    printf("\n===== FIBONACCI SEQUENCE CALCULATOR=====\n");
+    printf("\nThe Result is:\n  F(%d) = %lf OR %.0d", exponent, F, R);
+    
+    return 0;
+}
+```
